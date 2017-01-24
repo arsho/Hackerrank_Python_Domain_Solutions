@@ -139,6 +139,7 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
     <ul>
       <li>Map and Lambda Function</li>
       <li>Validating Email Addresses With a Filter</li>
+	  <li>Reduce Function</li>
     </ul>
   </li>
   <li>Regex and Parsing
