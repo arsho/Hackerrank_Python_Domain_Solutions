@@ -10,13 +10,4 @@ x=int(raw_input())
 y=int(raw_input())
 z=int(raw_input())
 n=int(raw_input())
-final_ar=[]
-for i in range(0,x+1):
-    for j in range(0,y+1):
-        for k in range(0,z+1):
-            tmp=i+j+k
-            if(tmp!=n):
-                ar=[i,j,k]
-                final_ar.append(ar)
-                
-print final_ar
+print([ [i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if i+j+k != n ])
