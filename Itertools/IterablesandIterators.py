@@ -5,17 +5,10 @@ Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 '''
-from itertools import *
-
+from itertools import combinations
 n = int(input())
-s = str(input())
+ar = input().split()
 k = int(input())
-
-pairs = list(combinations(s.split(),k))
-count = 0
-
-for pair in pairs:
-    if 'a' in pair:
-            count += 1
-
-print(count/len(pairs))
+comb_list = list(combinations(ar,k))
+a_list = [e for e in comb_list if 'a' in e]
+print(len(a_list) / len(comb_list))
