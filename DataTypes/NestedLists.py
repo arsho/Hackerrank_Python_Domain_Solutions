@@ -10,16 +10,13 @@ from collections import OrderedDict
 
 n=int(raw_input())
 ar={}
+val_ar=[]
 for i in range(0,n):
     tmp_name=raw_input()
     tmp_marks=float(raw_input())
     ar[tmp_name]=tmp_marks
-
-val_ar=[]
-for i in ar:
-    tmp_val=ar[i]
-    val_ar.append(tmp_val)
-    
+    val_ar.append(tmp_marks)
+  
 set_val=set(val_ar)
 val_ar=list(set_val)
 val_ar.sort()
