@@ -11,7 +11,9 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
 <p>Bonus: I have created Hackerrank_Solution_Blank_File_Creator.py to generate the blank file of each challenges. Have a look in <b>HackerrankUtility</b> folder.</p>
 <hr>
 <b>Hackerrank Python Domain</b>
+
 ![alt Hackerrank Python Domain](https://raw.githubusercontent.com/arsho/Hackerrank_Python_Domain_Solutions/master/Hackerrank_Python_Domain.png)
+
 <hr>
 <b>Solutions listed in Hackerrank_Python_Domain_Solutions</b>
 
@@ -208,8 +210,10 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
 <li>Blank file to create your solution for each challenge will be created in relevent subdomain.</li>
 </ol>
 <hr>
-<b>Watch demonstration process in <a href="https://youtu.be/G3hq5upfPEI">Youtube link here (Hackerrank Solution Blank File Creator DEMO)</a>.</b><br/>
+<b>Watch demonstration process in <a href="https://youtu.be/G3hq5upfPEI">Youtube link here (Hackerrank Solution Blank File Creator DEMO)
+
 [![https://youtu.be/G3hq5upfPEI](http://img.youtube.com/vi/G3hq5upfPEI/0.jpg)](https://youtu.be/G3hq5upfPEI)
-<hr>
+
+</a></b>
 <h3>Enjoy!</h3>
 <p>If you have any suggestion, please send a message to <a href="https://www.facebook.com/ars.shovon">https://www.facebook.com/ars.shovon</a></p>
