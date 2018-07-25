@@ -45,3 +45,34 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Compiled python modules.
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+/*.egg
+
+# Ide preference
+/.idea
+/webapp/.idea/
+/webapp/.idea/*
+.idea
+*.idea
+.eslintcache
+.eslintrc.json
+.vscode/
+
+# Python Cache
+/__pycache__
+
+# Virtual environments
+/venv/
+/venv/*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
