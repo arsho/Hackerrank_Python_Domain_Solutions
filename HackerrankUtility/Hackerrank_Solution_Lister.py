@@ -21,7 +21,7 @@ info_file_lines = info_file.readlines()
 info_file.close()
 output_file_name = 'solution_list.html'
 f = open(output_file_name,'w')
-f.write('<ul>\n')
+f.write('\n')
 for line in info_file_lines:
     line = line.strip()
     if line == '':
@@ -34,16 +34,12 @@ for line in info_file_lines:
         folder_name = get_valid_name(subdomain_name)
         title_ar = re.findall(r'("[^"]*")',problem_list)
         title_ar_len = len(title_ar)
-        f.write('  <li>'+subdomain_name+'\n')
-        f.write('    <ul>\n')
+        f.write('- '+subdomain_name+'\n')
         for title in title_ar:
             filename = get_valid_name(title[1:-1])
             filepath = folder_name + '\\' + filename+extension
-            f.write('      <li>['+title[1:-1]+']('+filepath+')</li>\n')
-        f.write('    </ul>\n')
-        f.write('  </li>\n')
+            f.write('   - ['+title[1:-1]+']('+filepath+')\n')
         subdomain_name = ''
         problem_list = ''
-f.write('</ul>\n')
 f.close()
 print('List generated successfully. Open '+output_file_name+' to view.')
