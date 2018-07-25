@@ -37,7 +37,7 @@ for line in info_file_lines:
         f.write('- '+subdomain_name+'\n')
         for title in title_ar:
             filename = get_valid_name(title[1:-1])
-            filepath = folder_name + '\\' + filename+extension
+            filepath = folder_name + '/' + filename+extension
             f.write('   - ['+title[1:-1]+']('+filepath+')\n')
         subdomain_name = ''
         problem_list = ''
