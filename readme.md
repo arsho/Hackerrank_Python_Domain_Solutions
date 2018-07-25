@@ -30,7 +30,6 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
 - Basic Data Types
    - [Lists](BasicDataTypes/Lists.py)
    - [Tuples](BasicDataTypes/Tuples.py)
-   - [Sets - Symmetric Difference](BasicDataTypes/SetsSymmetricDifference.py)
    - [List Comprehensions](BasicDataTypes/ListComprehensions.py)
    - [Find the Second Largest Number](BasicDataTypes/FindtheSecondLargestNumber.py)
    - [Nested Lists](BasicDataTypes/NestedLists.py)

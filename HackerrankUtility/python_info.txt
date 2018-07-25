@@ -2,7 +2,7 @@ Introduction
 ["Say Hello, World! With Python", "Reading Raw Input", "Python If-Else", "Arithmetic Operators", "Python: Division", "Loops", "Write a function", "Print Function"]
 
 Basic Data Types
-["Lists", "Tuples", "Sets - Symmetric Difference", "List Comprehensions", "Find the Second Largest Number", "Nested Lists", "Finding the percentage"]
+["Lists", "Tuples", "List Comprehensions", "Find the Second Largest Number", "Nested Lists", "Finding the percentage"]
 
 Strings
 ["sWAP cASE", "String Split and Join", "Whats Your Name?", "Mutations", "Find a string", "String Validators", "Text Alignment", "Text Wrap", "Designer Door Mat", "String Formatting", "Alphabet Rangoli", "Capitalize!", "The Minion Game"]
