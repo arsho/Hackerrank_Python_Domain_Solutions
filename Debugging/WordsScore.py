@@ -4,6 +4,7 @@ Subdomain : Debugging
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 08 July 2018
+Problem   : https://www.hackerrank.com/challenges/words-score/problem
 '''
 def is_vowel(letter):
     return letter in ['a', 'e', 'i', 'o', 'u', 'y']

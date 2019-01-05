@@ -4,6 +4,7 @@ Subdomain : Regex and Parsing
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/introduction-to-regex/problem
 '''
 import re
 n = int(input())

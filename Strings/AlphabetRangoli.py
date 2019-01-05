@@ -4,6 +4,7 @@ Subdomain : Strings
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/alphabet-rangoli/problem
 '''
 n = int(input().strip())
 w = (n-1) * 2 + ((n * 2) - 1)

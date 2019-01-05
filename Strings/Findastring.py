@@ -4,6 +4,7 @@ Subdomain : Strings
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/find-a-string/problem
 '''
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 s=raw_input()

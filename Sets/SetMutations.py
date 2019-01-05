@@ -4,6 +4,7 @@ Subdomain : Sets
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/py-set-mutations/problem
 '''
 n = int(input())
 a = set(map(int,input().split()))
