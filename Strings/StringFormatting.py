@@ -4,6 +4,7 @@ Subdomain : Strings
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/python-string-formatting/problem
 '''
 n = int(input().strip())
 w = len(str(bin(n))[2:])

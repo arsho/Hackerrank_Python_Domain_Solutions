@@ -4,6 +4,7 @@ Subdomain : Itertools
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/itertools-product/problem
 '''
 import itertools
 ar1 = list(map(int,input().split()))

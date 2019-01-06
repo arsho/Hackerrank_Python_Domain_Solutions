@@ -4,6 +4,7 @@ Subdomain : Python Functionals
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 24 January 2017
+Problem   : https://www.hackerrank.com/challenges/reduce-function/problem
 '''
 from fractions import Fraction
 from functools import reduce

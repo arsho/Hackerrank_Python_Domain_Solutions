@@ -4,6 +4,7 @@ Subdomain : Errors and Exceptions
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/incorrect-regex/problem
 '''
 import re
 n = int(input())

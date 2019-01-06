@@ -4,6 +4,7 @@ Subdomain : Regex and Parsing
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/detect-html-tags-attributes-and-attribute-values/problem
 '''
 from html.parser import HTMLParser
 

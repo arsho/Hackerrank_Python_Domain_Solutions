@@ -4,6 +4,7 @@ Subdomain : Python Functionals
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem
 '''
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 import re

@@ -4,6 +4,7 @@ Subdomain : Sets
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/symmetric-difference/problem
 '''
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 m=int(raw_input())

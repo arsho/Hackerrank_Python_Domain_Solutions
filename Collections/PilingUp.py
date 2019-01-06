@@ -4,6 +4,7 @@ Subdomain : Collections
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Problem   : https://www.hackerrank.com/challenges/piling-up/problem
 '''
 from collections import deque
 cas = int(input())
