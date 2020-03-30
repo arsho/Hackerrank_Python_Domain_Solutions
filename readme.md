@@ -1,6 +1,5 @@
 <p>
 My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes may give a head start, if you are stuck in somewhere! 
- <img class="emoji" title=":smiley:" alt=":smiley:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" height="20" width="20" align="absmiddle">
 </p>
 <p>
  If you have better code (I like readable code rather than short liner), send pull request. 
@@ -168,4 +167,7 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
 
 </a></b>
 <h3>Enjoy!</h3>
-<p>If you have any suggestion, please send a message to <a href="https://www.facebook.com/ars.shovon">https://www.facebook.com/ars.shovon</a></p>
+
+## Contact
+
+If you want to contact me you can reach me at [arshovon.com](https://arshovon.com/).
