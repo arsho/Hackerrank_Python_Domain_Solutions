@@ -3,14 +3,11 @@ Title     : Tuples
 Subdomain : Data Types
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
-Created   : 15 July 2016
+Created   : 06 July 2020
 Problem   : https://www.hackerrank.com/challenges/python-tuples/problem
 '''
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-n=int(raw_input())
-numbers=raw_input().strip().split()
-ar=[]
-for i in range(0,len(numbers)):
-   ar.append(int(numbers[i]))
-t=tuple(ar)
-print hash(t)
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    t = tuple(integer_list)
+    print(hash(t))
