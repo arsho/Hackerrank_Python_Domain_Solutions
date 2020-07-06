@@ -19,7 +19,6 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
 
 - Introduction
    - [Say Hello, World! With Python](Introduction/SayHelloWorldWithPython.py)
-   - [Reading Raw Input](Introduction/ReadingRawInput.py)
    - [Python If-Else](Introduction/PythonIfElse.py)
    - [Arithmetic Operators](Introduction/ArithmeticOperators.py)
    - [Python: Division](Introduction/PythonDivision.py)

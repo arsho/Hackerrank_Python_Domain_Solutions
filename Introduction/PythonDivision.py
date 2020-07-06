@@ -3,12 +3,12 @@ Title     : Python: Division
 Subdomain : Introduction
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
-Created   : 15 July 2016
+Created   : 06 July 2020
 Problem   : https://www.hackerrank.com/challenges/python-division/problem
 '''
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-a=int(raw_input())
-b=int(raw_input())
-print a/b
-c=float(a)
-print c/b
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    print(a//b)
+    print(a/b)
+    
