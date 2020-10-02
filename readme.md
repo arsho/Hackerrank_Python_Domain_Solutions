@@ -1,5 +1,5 @@
 <p>
-My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes may give a head start, if you are stuck in somewhere! 
+My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes may give a head start if you are stuck somewhere! 
 </p>
 <p>
  If you have better code (I like readable code rather than short liner), send pull request. 
