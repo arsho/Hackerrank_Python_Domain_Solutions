@@ -1,0 +1,9 @@
+n=input()
+n=n[::-1]
+sum=0
+f=1
+l=len(n)
+for i,x in enumerate(n):
+    sum+=(int(x)*(l-i)*f)%1000000007
+    f=((f*10)+1)%1000000007
+print(sum%1000000007)
