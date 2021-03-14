@@ -2,24 +2,18 @@
 Title     : Python If-Else
 Subdomain : Introduction
 Domain    : Python
-Author    : Ahmedur Rahman Shovon
-Created   : 15 July 2016
+Author    : Utkarsh Mishra
+Created   : 27 Jan 2021
 Problem   : https://www.hackerrank.com/challenges/py-if-else/problem
 '''
 #!/bin/python3
 
 import sys
 
+n = int(input())
+if n%2==1 or n in range (5,21):
+    print("Weird")
+else:
+    print("Not Weird")
 
-N = int(input().strip())
-n= N
-w = 'Weird'
-nw = 'Not Weird'
-if n % 2 == 1:
-    print(w)
-elif n % 2 == 0 and (n>=2 and n<5):
-    print(nw)
-elif n % 2 == 0 and (n>=6 and n<=20):
-    print(w)
-elif n % 2 == 0 and (n>20):
-    print(nw)    
+    
