@@ -6,8 +6,7 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/floor-ceil-and-rint/problem
 '''
-import numpy
-np_ar = numpy.array(list(map(float,input().split())),float)
-print(numpy.floor(np_ar))
-print(numpy.ceil(np_ar))
-print(numpy.rint(np_ar))
+import numpy as np
+np.set_printoptions(sign=' ')
+a = np.array(input().split(), float)
+print(*(f(a) for f in [np.floor, np.ceil, np.rint]), sep='\n')
