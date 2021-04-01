@@ -19,7 +19,6 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
 
 - Introduction
    - [Say Hello, World! With Python](Introduction/SayHelloWorldWithPython.py)
-   - [Reading Raw Input](Introduction/ReadingRawInput.py)
    - [Python If-Else](Introduction/PythonIfElse.py)
    - [Arithmetic Operators](Introduction/ArithmeticOperators.py)
    - [Python: Division](Introduction/PythonDivision.py)
@@ -30,7 +29,7 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
    - [Lists](BasicDataTypes/Lists.py)
    - [Tuples](BasicDataTypes/Tuples.py)
    - [List Comprehensions](BasicDataTypes/ListComprehensions.py)
-   - [Find the Second Largest Number](BasicDataTypes/FindtheSecondLargestNumber.py)
+   - [Find the Runner-Up Score!](BasicDataTypes/FindtheSecondLargestNumber.py)
    - [Nested Lists](BasicDataTypes/NestedLists.py)
    - [Finding the percentage](BasicDataTypes/Findingthepercentage.py)
 - Strings
