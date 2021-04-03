@@ -4,23 +4,20 @@ Subdomain : Closures and Decorators
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 3 April 2021
 Problem   : https://www.hackerrank.com/challenges/decorators-2-name-directory/problem
 '''
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-ar=[]
-n=int(raw_input())
-for i in range(0,n):
-    str_ar=raw_input().strip().split()
-    user_name=str_ar[0]+" "+str_ar[1]
-    user_age=int(str_ar[2])
-    user_sex=str_ar[3]
-    user_new_name=""
-    if(user_sex=="M"):
-        user_new_name="Mr. "+user_name
-    else:
-        user_new_name="Ms. "+user_name
-    ar.append([user_new_name,user_age])
 
-sorted = sorted(ar, key=lambda tup: tup[1])
-for i in range(0,n):
-    print sorted[i][0]
+import operator
+def person_lister(func):
+    def inner(people):
+        return [func(p) for p in sorted(people, key = lambda x: (int(x[2])))]
+    return inner
+
+@person_lister
+def name_format(person):
+    return ("Mr. " if person[3] == "M" else "Ms. ") + person[0] + " " + person[1]
+
+if __name__ == '__main__':
+    people = [input().split() for i in range(int(input()))]
+    print(*name_format(people), sep='\n')
