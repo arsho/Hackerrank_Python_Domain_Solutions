@@ -4,13 +4,12 @@ Subdomain : Numpy
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 3 April 2021
 Problem   : https://www.hackerrank.com/challenges/np-linear-algebra/problem
 '''
-import numpy
+
+import numpy as np
+np.set_printoptions(legacy='1.13')
 n = int(input())
-ar = []
-for i in range(n):
-    tmp = list(map(float,input().split()))
-    ar.append(tmp)
-np_ar = numpy.array(ar,float)
-print(numpy.linalg.det(np_ar))
+array = np.array([input().split() for _ in range(n)], float)
+print(np.linalg.det(array))
