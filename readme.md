@@ -98,7 +98,7 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
    - [Zipped!](BuiltIns/Zipped.py)
    - [Input()](BuiltIns/Input.py)
    - [Python Evaluation](BuiltIns/PythonEvaluation.py)
-   - [Sort Data](BuiltIns/SortData.py)
+   - [Athlete Sort](BuiltIns/AthleteSort.py)
    - [Any or All](BuiltIns/AnyorAll.py)
    - [ginortS](BuiltIns/ginortS.py)
 - Python Functionals
