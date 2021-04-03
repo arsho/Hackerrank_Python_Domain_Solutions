@@ -7,27 +7,14 @@ Created   : 15 July 2016
 Updated   : 3 April 2021
 Problem   : https://www.hackerrank.com/challenges/validating-the-phone-number/problem
 '''
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-n=int(input())
-for i in range(0,n):
-    tmp_str=input()
-    len_tmp_str=len(tmp_str)
-    if(len_tmp_str!=10):
-        ##print "LENGTH PROBLEM"
-        print ("NO")
-    elif(tmp_str[0]!="7" and tmp_str[0]!="8" and tmp_str[0]!="9"):
-        ##print "START PROBLEM"        
-        print ("NO")
+
+from re import compile, match
+
+n = int(input())
+for _ in range(n):
+    phone_number = input()
+    condition = compile(r'^[7-9]\d{9}$')
+    if bool(match(condition, phone_number)):
+        print("YES")
     else:
-        check=1
-        for i in tmp_str:
-            if(i>="0" and i<="9"):
-                continue
-            else:
-                check=0
-                break
-        if(check==1):
-            print ("YES")
-        else:
-            ##print "NUMBER PROBLEM"            
-            print ("NO")
+        print("NO")
