@@ -7,16 +7,16 @@ Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/validating-the-phone-number/problem
 '''
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-n=int(raw_input())
+n=int(input())
 for i in range(0,n):
-    tmp_str=raw_input()
+    tmp_str=input()
     len_tmp_str=len(tmp_str)
     if(len_tmp_str!=10):
         ##print "LENGTH PROBLEM"
-        print "NO"
+        print ("NO")
     elif(tmp_str[0]!="7" and tmp_str[0]!="8" and tmp_str[0]!="9"):
         ##print "START PROBLEM"        
-        print "NO"
+        print ("NO")
     else:
         check=1
         for i in tmp_str:
@@ -26,7 +26,7 @@ for i in range(0,n):
                 check=0
                 break
         if(check==1):
-            print "YES"
+            print ("YES")
         else:
             ##print "NUMBER PROBLEM"            
-            print "NO"
+            print ("NO")
