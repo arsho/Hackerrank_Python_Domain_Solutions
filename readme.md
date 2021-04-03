@@ -105,7 +105,7 @@ My solutions of <strong>Hackerrank Python Domain</strong> challenges. The codes 
    - [Map and Lambda Function](PythonFunctionals/MapandLambdaFunction.py)
    - [Validating Email Addresses With a Filter](PythonFunctionals/ValidatingEmailAddressesWithaFilter.py)
 - Regex and Parsing
-   - [Introduction to Regex Module](RegexandParsing/IntroductiontoRegexModule.py)
+   - [Detect Floating Point Numbers](RegexandParsing/DetectFloatingPointNumbers.py)
    - [Re.split()](RegexandParsing/Resplit.py)
    - [Group(), Groups() &amp; Groupdict()](RegexandParsing/GroupGroupsampGroupdict.py)
    - [Re.findall() &amp; Re.finditer()](RegexandParsing/RefindallampRefinditer.py)
