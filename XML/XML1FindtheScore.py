@@ -2,16 +2,20 @@
 Title     : XML 1 - Find the Score
 Subdomain : XML
 Domain    : Python
-Author    : Ahmedur Rahman Shovon
-Created   : 15 July 2016
+Author    : Aditya Prakash Gupta
+Created   : 20 August 2021
 Problem   : https://www.hackerrank.com/challenges/xml-1-find-the-score/problem
 '''
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-xml_str=""
-n=int(raw_input())
-for i in range(0,n):
-    tmp_str=raw_input()
-    xml_str=xml_str+tmp_str
-    
-cnt=xml_str.count("='")
-print cnt
+import sys
+import xml.etree.ElementTree as etree
+
+def get_attr_number(node):
+    # your code goes here
+    return len(node.attrib) + sum(get_attr_number(child) for child in node)
+
+if __name__ == '__main__':
+    sys.stdin.readline()
+    xml = sys.stdin.read()
+    tree = etree.ElementTree(etree.fromstring(xml))
+    root = tree.getroot()
+    print(get_attr_number(root))
