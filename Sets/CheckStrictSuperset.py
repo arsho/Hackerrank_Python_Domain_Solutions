@@ -1,17 +1,17 @@
-'''
+"""
 Title     : Check Strict Superset
 Subdomain : Sets
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 19 June 2022
 Problem   : https://www.hackerrank.com/challenges/py-check-strict-superset/problem
-'''
-A  = set(input().split())
-n = int(input())
-check = True
-for i in range(n):
-    s = set(input().split())
-    if (s&A != s) or (s == A):
-        check = False
-        break
-print(check)
+"""
+first_set = set(map(int, input().split()))
+number_of_other_sets = int(input())
+is_strict_superset = True
+for t in range(number_of_other_sets):
+    other_set = set(map(int, input().split()))
+    if not first_set.issuperset(other_set):
+        is_strict_superset = False
+print(is_strict_superset)

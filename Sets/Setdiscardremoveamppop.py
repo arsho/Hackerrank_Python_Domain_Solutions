@@ -1,19 +1,23 @@
-'''
+"""
 Title     : Set .discard(), .remove() &amp; .pop()
 Subdomain : Sets
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/py-set-discard-remove-pop/problem
-'''
-n = int(input())
-s = set(map(int, input().split())) 
-n = int(input())
-for i in range(n):
-    cmd = list(input().split(' '))
-    if (len(cmd) == 1):
-        s.pop()
+"""
+number_of_elements = int(input())
+elements = set(map(int, input().split()))
+number_of_commands = int(input())
+for i in range(number_of_commands):
+    cmd = list(input().split())
+    if len(cmd) == 1:
+        elements.pop()
     else:
         value = int(cmd[1])
-        s.discard(value)
-print(sum(s))
+        operation = cmd[0]
+        if operation == "discard":
+            elements.discard(value)
+        else:
+            elements.remove(value)
+print(sum(elements))

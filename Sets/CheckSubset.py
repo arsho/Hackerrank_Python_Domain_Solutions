@@ -1,12 +1,16 @@
-'''
+"""
 Title     : Check Subset
 Subdomain : Sets
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 19 June 2022
 Problem   : https://www.hackerrank.com/challenges/py-check-subset/problem
-'''
-for i in range(int(input())): #More than 4 lines will result in 0 score. Blank lines won't be counted. 
-    a = int(input()); A = set(input().split()) 
-    b = int(input()); B = set(input().split())
-    print((A & B) == A)
+"""
+number_of_testcases = int(input())
+for t in range(number_of_testcases):
+    number_of_elements_first_set = int(input())
+    first_set = set(map(int, input().split()))
+    number_of_elements_second_set = int(input())
+    second_set = set(map(int, input().split()))
+    print(first_set.issubset(second_set))
