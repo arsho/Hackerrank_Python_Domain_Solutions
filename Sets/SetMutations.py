@@ -1,24 +1,25 @@
-'''
+"""
 Title     : Set Mutations
 Subdomain : Sets
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 19 June 2022
 Problem   : https://www.hackerrank.com/challenges/py-set-mutations/problem
-'''
-n = int(input())
-a = set(map(int,input().split()))
-N = int(input())
-for i in range(N):
+"""
+number_of_elements = int(input())
+initial_set = set(map(int, input().split()))
+number_of_other_sets = int(input())
+for i in range(number_of_other_sets):
     cmd = input().split()
     opt = cmd[0]
-    s = set(map(int,input().split()))
-    if (opt == 'update'):
-        a |= s
-    elif (opt == 'intersection_update'):
-        a &= s
-    elif (opt == 'difference_update'):
-        a -= s
-    elif (opt == 'symmetric_difference_update'):
-        a ^= s
-print(sum(a))
+    other_set = set(map(int, input().split()))
+    if opt == 'update':
+        initial_set.update(other_set)
+    elif opt == 'intersection_update':
+        initial_set.intersection_update(other_set)
+    elif opt == 'difference_update':
+        initial_set.difference_update(other_set)
+    elif opt == 'symmetric_difference_update':
+        initial_set.symmetric_difference_update(other_set)
+print(sum(initial_set))
