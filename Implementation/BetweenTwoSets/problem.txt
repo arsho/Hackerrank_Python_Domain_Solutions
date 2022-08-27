@@ -1,0 +1,21 @@
+There will be two arrays of integers. Determine all integers that satisfy the following two conditions:
+
+1. The elements of the first array are all factors of the integer being considered
+2. The integer being considered is a factor of all elements of the second array
+These numbers are referred to as being between the two arrays. Determine how many such numbers exist.
+
+for example:
+    a = [2, 4]
+    b = [16, 32, 96]
+in the above lists, list a has 2 and 4, list b has 16, 32, 96. now find out all the numbers that are same as the multiple of both elements in a and at the same time factors of every element in b. 
+For more understanding take a look at the demonstration below:
+
+Multiples of 2 of a = 2, 4, 6, 8, 10, 12, 14, 16, ...... all the way upto 100 (1 <= a[i] <= 100)
+Multiples of 4 of a = 4, 8, 12, 16, 20........  all the way upto 100 (1 <= a[i] <= 100)
+
+Factors of 16 of b = 1, 2, 4, 8, 16
+Factors of 32 of b = 1, 2, 4, 8, 16, 32
+Factors of 96 of b = 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96
+
+so from the above lines we see that only 4, 8, and 16 are shared in every line. hence the result is 
+len([4, 8, 16]) = 3
