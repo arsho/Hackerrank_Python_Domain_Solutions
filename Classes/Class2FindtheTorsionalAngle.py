@@ -31,15 +31,10 @@ def cross(a, b):
 
     return c
 
-a_str_ar=raw_input().strip().split()
-b_str_ar=raw_input().strip().split()
-c_str_ar=raw_input().strip().split()
-d_str_ar=raw_input().strip().split()
-
-a=list(map(float,a_str_ar))
-b=list(map(float,b_str_ar))
-c=list(map(float,c_str_ar))
-d=list(map(float,d_str_ar))
+a = list(map(float, input().split()))
+b = list(map(float, input().split()))
+c = list(map(float, input().split()))
+d = list(map(float, input().split()))
 
 ab=custom_diff(b,a)
 bc=custom_diff(c,b)
@@ -54,4 +49,4 @@ cosphi=cosphi_top/cosphi_bottom
 
 res=math.degrees(math.acos(cosphi))
 
-print "%.2f" %res
+print("%.2f" %res)
