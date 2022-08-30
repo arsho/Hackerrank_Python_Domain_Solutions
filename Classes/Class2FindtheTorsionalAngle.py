@@ -6,7 +6,9 @@ Title     : Class 2 - Find the Torsional Angle
 Subdomain : Classes
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
+Updater   : Imtiaz Ahmed
 Created   : 15 July 2016
+Updated   : 30 August 2022
 Problem   : https://www.hackerrank.com/challenges/class-2-find-the-torsional-angle/problem
 '''
 
