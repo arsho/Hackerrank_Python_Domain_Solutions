@@ -1,3 +1,6 @@
+import math
+
+
 '''
 Title     : Class 2 - Find the Torsional Angle
 Subdomain : Classes
@@ -6,47 +9,37 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/class-2-find-the-torsional-angle/problem
 '''
-# Enter your code here. Read input from STDIN. Print output to STDOUT
 
-import math
-def custom_diff(a,b):
-    res0 = a[0] - b[0]
-    res1 = a[1] - b[1]
-    res2 = a[2] - b[2]
-    return [res0,res1,res2]
+class Points:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
 
-def dot_product(a,b):
-    return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]
+    def __sub__(self, other):
+        return Points(self.x - other.x, self.y - other.y, self.z - other.z)
 
-def abs_val(a):
-    tmp_val=a[0]*a[0]+a[1]*a[1]+a[2]*a[2]
-    return math.sqrt(tmp_val)
+    def dot(self, other):
+        return self.x * other.x + self.y * other.y + self.z * other.z  
+        
+    def absolute(self):
+        return math.sqrt(self.x * self.x + self.y * self.y + self.z * self.z)
+
+    def cross(self, other):
+        return Points(self.y * other.z - self.z * other.y,
+            self.z * other.x - self.x * other.z,
+            self.x * other.y - self.y * other.x)
 
 
+if __name__ == '__main__':
+    points = list()
+    for i in range(4):
+        a = list(map(float, input().split()))
+        points.append(a)
 
-def cross(a, b):
-    c = [a[1]*b[2] - a[2]*b[1],
-         a[2]*b[0] - a[0]*b[2],
-         a[0]*b[1] - a[1]*b[0]]
+    a, b, c, d = Points(*points[0]), Points(*points[1]), Points(*points[2]), Points(*points[3])
+    x = (b - a).cross(c - b)
+    y = (c - b).cross(d - c)
+    angle = math.acos(x.dot(y) / (x.absolute() * y.absolute()))
 
-    return c
-
-a = list(map(float, input().split()))
-b = list(map(float, input().split()))
-c = list(map(float, input().split()))
-d = list(map(float, input().split()))
-
-ab=custom_diff(b,a)
-bc=custom_diff(c,b)
-cd=custom_diff(d,c)
-
-x=cross(ab,bc)
-y=cross(bc,cd)
-       
-cosphi_top=dot_product(x,y)
-cosphi_bottom=abs_val(x)*abs_val(y)
-cosphi=cosphi_top/cosphi_bottom
-
-res=math.degrees(math.acos(cosphi))
-
-print("%.2f" %res)
+    print("%.2f" % math.degrees(angle))
