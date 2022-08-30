@@ -3,14 +3,15 @@ Title     : Zipped!
 Subdomain : Built-Ins
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
+Updater   : Imtiaz Ahmed
 Created   : 15 July 2016
+Updated   : 30 August 2022
 Problem   : https://www.hackerrank.com/challenges/zipped/problem
 '''
-n, x = map(int,input().split())
-ar = [0 for i in range(n)]
-for i in range(x):
-    temp_ar=list(map(float,input().split()))
-    for j in range(n):
-        ar[j] += temp_ar[j]
-for i in range(n):
-    print(ar[i]/x)
+
+N, X = map(int, input().split())
+scores = []
+for _ in range(X):
+    scores.append(list(map(float, input().split())))
+for i in zip(*scores):
+    print(sum(i)/len(i))
