@@ -16,6 +16,6 @@ if __name__ == '__main__':
         students.append(student)
         scores.append(score)
     second_min_score = sorted(set(scores))[1]
-    student_names = sorted(
-        [student[0] for student in students if student[1] == second_min_score])
+    student_names = sorted([student[0] for student in students
+                            if student[1] == second_min_score])
     print("\n".join(student_names))
