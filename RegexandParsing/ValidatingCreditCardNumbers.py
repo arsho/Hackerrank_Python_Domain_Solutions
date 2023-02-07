@@ -6,22 +6,25 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/validating-credit-card-number/problem
 """
+
 import re
 
 n = int(input())
-for t in range(n):
+for _ in range(n):
     credit = input().strip()
     credit_removed_hiphen = credit.replace("-", "")
     valid = True
     length_16 = bool(re.match(r"^[4-6]\d{15}$", credit))
     length_19 = bool(re.match(r"^[4-6]\d{3}-\d{4}-\d{4}-\d{4}$", credit))
     consecutive = bool(re.findall(r"(?=(\d)\1\1\1)", credit_removed_hiphen))
-    if length_16 == True or length_19 == True:
-        if consecutive == True:
-            valid = False
-    else:
+    if (
+        (length_16 or length_19)
+        and consecutive
+        or not length_16
+        and not length_19
+    ):
         valid = False
-    if valid == True:
+    if valid:
         print("Valid")
     else:
         print("Invalid")

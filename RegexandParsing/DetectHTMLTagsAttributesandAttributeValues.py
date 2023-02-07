@@ -24,10 +24,7 @@ class CustomHTMLParser(HTMLParser):
 
 
 n = int(input())
-html_string = ""
-for i in range(n):
-    html_string += input()
-
+html_string = "".join(input() for _ in range(n))
 customHTMLParser = CustomHTMLParser()
 customHTMLParser.feed(html_string)
 customHTMLParser.close()

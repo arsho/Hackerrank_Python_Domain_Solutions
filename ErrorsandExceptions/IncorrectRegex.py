@@ -6,10 +6,11 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/incorrect-regex/problem
 """
+
 import re
 
 n = int(input())
-for i in range(n):
+for _ in range(n):
     s = input()
     try:
         re.compile(s)
