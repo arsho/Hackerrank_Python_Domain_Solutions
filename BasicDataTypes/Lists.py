@@ -8,7 +8,7 @@ Updated   : 06 February 2023
 Problem   : https://www.hackerrank.com/challenges/python-lists/problem
 """
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     N = int(input())
     ar = []
     for i in range(N):

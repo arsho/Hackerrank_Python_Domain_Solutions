@@ -8,6 +8,7 @@ Problem   : https://www.hackerrank.com/challenges/validate-list-of-email-address
 '''
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 import re
+
 n=int(raw_input())
 ar=[]
 for i in range(0,n):
