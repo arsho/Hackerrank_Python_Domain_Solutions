@@ -17,9 +17,7 @@ for _ in range(n):
     item_name = record_list[0]
     item_price = int(record_list[1])
     item_od[item_name] = (
-        item_price
-        if item_name not in item_od
-        else item_od[item_name] + item_price
+        item_price if item_name not in item_od else item_od[item_name] + item_price
     )
 for i in item_od:
     print(i + str(item_od[i]))

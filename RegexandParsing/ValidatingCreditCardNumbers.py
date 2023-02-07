@@ -17,12 +17,7 @@ for _ in range(n):
     length_16 = bool(re.match(r"^[4-6]\d{15}$", credit))
     length_19 = bool(re.match(r"^[4-6]\d{3}-\d{4}-\d{4}-\d{4}$", credit))
     consecutive = bool(re.findall(r"(?=(\d)\1\1\1)", credit_removed_hiphen))
-    if (
-        (length_16 or length_19)
-        and consecutive
-        or not length_16
-        and not length_19
-    ):
+    if (length_16 or length_19) and consecutive or not length_16 and not length_19:
         valid = False
     if valid:
         print("Valid")
