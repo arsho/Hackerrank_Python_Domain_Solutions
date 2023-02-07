@@ -7,7 +7,7 @@ Created   : 06 July 2020
 Problem   : https://www.hackerrank.com/challenges/python-print/problem
 """
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
     ar = range(1, n + 1)
     for i in ar:

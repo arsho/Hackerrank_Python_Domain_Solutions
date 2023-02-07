@@ -9,7 +9,7 @@ Problem   : https://www.hackerrank.com/challenges/text-alignment/problem
 """
 
 thickness = int(input())
-c = 'H'
+c = "H"
 
 # Top Cone
 for i in range(thickness):
@@ -29,5 +29,10 @@ for i in range(thickness + 1):
 
 # Bottom Cone
 for i in range(thickness):
-    print(((c * (thickness - i - 1)).rjust(thickness) + c + (c * (thickness - i - 1)).ljust(thickness)).rjust(
-        thickness * 6))
+    print(
+        (
+            (c * (thickness - i - 1)).rjust(thickness)
+            + c
+            + (c * (thickness - i - 1)).ljust(thickness)
+        ).rjust(thickness * 6)
+    )

@@ -14,12 +14,12 @@ for i in range(number_of_other_sets):
     cmd = input().split()
     opt = cmd[0]
     other_set = set(map(int, input().split()))
-    if opt == 'update':
+    if opt == "update":
         initial_set.update(other_set)
-    elif opt == 'intersection_update':
+    elif opt == "intersection_update":
         initial_set.intersection_update(other_set)
-    elif opt == 'difference_update':
+    elif opt == "difference_update":
         initial_set.difference_update(other_set)
-    elif opt == 'symmetric_difference_update':
+    elif opt == "symmetric_difference_update":
         initial_set.symmetric_difference_update(other_set)
 print(sum(initial_set))

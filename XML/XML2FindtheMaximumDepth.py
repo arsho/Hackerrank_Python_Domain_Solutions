@@ -14,6 +14,7 @@ for i in range(0,n):
     xml_str=xml_str+tmp_str
     
 import xml.etree.ElementTree as etree
+
 tree = etree.ElementTree(etree.fromstring(xml_str))
 root=tree.getroot()
 ar=[]

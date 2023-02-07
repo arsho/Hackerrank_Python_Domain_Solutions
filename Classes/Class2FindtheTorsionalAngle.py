@@ -1,7 +1,6 @@
 import math
 
-
-'''
+"""
 Title     : Class 2 - Find the Torsional Angle
 Subdomain : Classes
 Domain    : Python
@@ -10,7 +9,8 @@ Updater   : Imtiaz Ahmed
 Created   : 15 July 2016
 Updated   : 30 August 2022
 Problem   : https://www.hackerrank.com/challenges/class-2-find-the-torsional-angle/problem
-'''
+"""
+
 
 class Points:
     def __init__(self, x, y, z):
@@ -22,24 +22,31 @@ class Points:
         return Points(self.x - other.x, self.y - other.y, self.z - other.z)
 
     def dot(self, other):
-        return self.x * other.x + self.y * other.y + self.z * other.z  
-        
+        return self.x * other.x + self.y * other.y + self.z * other.z
+
     def absolute(self):
         return math.sqrt(self.x * self.x + self.y * self.y + self.z * self.z)
 
     def cross(self, other):
-        return Points(self.y * other.z - self.z * other.y,
+        return Points(
+            self.y * other.z - self.z * other.y,
             self.z * other.x - self.x * other.z,
-            self.x * other.y - self.y * other.x)
+            self.x * other.y - self.y * other.x,
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     points = list()
     for i in range(4):
         a = list(map(float, input().split()))
         points.append(a)
 
-    a, b, c, d = Points(*points[0]), Points(*points[1]), Points(*points[2]), Points(*points[3])
+    a, b, c, d = (
+        Points(*points[0]),
+        Points(*points[1]),
+        Points(*points[2]),
+        Points(*points[3]),
+    )
     x = (b - a).cross(c - b)
     y = (c - b).cross(d - c)
     angle = math.acos(x.dot(y) / (x.absolute() * y.absolute()))

@@ -7,7 +7,7 @@ Created   : 06 July 2020
 Updated   : 06 February 2023
 Problem   : https://www.hackerrank.com/challenges/finding-the-percentage/problem
 """
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
     student_marks = {}
     for _ in range(n):
@@ -17,4 +17,3 @@ if __name__ == '__main__':
     query_name = input()
     avg_score = sum(student_marks[query_name]) / len(student_marks[query_name])
     print(f"{avg_score:.2f}")
-

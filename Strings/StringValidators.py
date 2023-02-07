@@ -7,7 +7,7 @@ Created   : 15 July 2016
 Updated   : 08 July 2020
 Problem   : https://www.hackerrank.com/challenges/string-validators/problem
 """
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = input()
     flag_alnum = False
     flag_alpha = False
