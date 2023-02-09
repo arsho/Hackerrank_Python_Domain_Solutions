@@ -1,6 +1,13 @@
 name: Black
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
 
 jobs:
   build:
@@ -27,3 +34,6 @@ jobs:
         git config --local user.name "GitHub Action"
         git add .
         git diff-index --quiet HEAD || git commit -m "Format Python code with Black"
+    - name: Push changes
+      run: |
+        git push origin master
