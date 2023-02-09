@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10"]
+        python-version: ["3.10"]
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
@@ -30,10 +30,14 @@ jobs:
         black $(git ls-files '*.py') 
     - name: Commit changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+        git config --local user.name "${{ github.actor }}"
+        git stash -u
+        black $(git ls-files '*.py')
+        git stash pop
         git add .
-        git diff-index --quiet HEAD || git commit -m "Format Python code with Black"
+        message="$(git log -1 --pretty=%B) Format Python code with Black"
+        git diff-index --quiet HEAD || git commit -m "$message"
     - name: Push changes
       run: |
         git push origin master
