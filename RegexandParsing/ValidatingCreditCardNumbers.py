@@ -6,10 +6,11 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/validating-credit-card-number/problem
 """
+
 import re
 
 n = int(input())
-for t in range(n):
+for _ in range(n):
     credit = input().strip()
     credit_removed_hiphen = credit.replace("-", "")
     valid = True
@@ -21,7 +22,7 @@ for t in range(n):
             valid = False
     else:
         valid = False
-    if valid == True:
+    if valid:
         print("Valid")
     else:
         print("Invalid")

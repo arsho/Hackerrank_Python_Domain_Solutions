@@ -30,10 +30,7 @@ parser = CustomHTMLParser()
 
 n = int(input())
 
-s = ""
-for i in range(n):
-    s += input()
-
+s = "".join(input() for _ in range(n))
 parser.feed(s)
 
 """

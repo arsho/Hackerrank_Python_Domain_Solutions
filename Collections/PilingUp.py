@@ -6,10 +6,11 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/piling-up/problem
 """
+
 from collections import deque
 
 cas = int(input())
-for t in range(cas):
+for _ in range(cas):
     n = int(input())
     dq = deque(map(int, input().split()))
     possible = True

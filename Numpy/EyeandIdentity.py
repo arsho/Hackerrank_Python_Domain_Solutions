@@ -7,7 +7,7 @@ Created   : 15 July 2016
 Updated   : 17 March 2021
 Problem   : https://www.hackerrank.com/challenges/np-eye-and-identity/problem
 """
-import numpy as p
+import numpy as np
 
 np.set_printoptions(legacy="1.13")
 n, m = map(int, input().split())

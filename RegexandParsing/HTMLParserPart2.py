@@ -29,9 +29,6 @@ parser = CustomHTMLParser()
 
 n = int(input())
 
-html_string = ""
-for i in range(n):
-    html_string += input().rstrip() + "\n"
-
+html_string = "".join(input().rstrip() + "\n" for _ in range(n))
 parser.feed(html_string)
 parser.close()

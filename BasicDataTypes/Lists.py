@@ -8,10 +8,11 @@ Updated   : 06 February 2023
 Problem   : https://www.hackerrank.com/challenges/python-lists/problem
 """
 
+
 if __name__ == "__main__":
     N = int(input())
     ar = []
-    for i in range(N):
+    for _ in range(N):
         command_args = input().strip().split(" ")
         cmd = command_args[0]
         if cmd == "print":

@@ -6,10 +6,11 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/py-set-discard-remove-pop/problem
 """
+
 number_of_elements = int(input())
 elements = set(map(int, input().split()))
 number_of_commands = int(input())
-for i in range(number_of_commands):
+for _ in range(number_of_commands):
     cmd = list(input().split())
     if len(cmd) == 1:
         elements.pop()

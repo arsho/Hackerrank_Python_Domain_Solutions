@@ -1,20 +1,27 @@
-'''
+"""
 Title     : Validating Email Addresses With a Filter
 Subdomain : Python Functionals
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 08 February 2023
 Problem   : https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem
-'''
-# Enter your code here. Read input from STDIN. Print output to STDOUT
+"""
+
 import re
 
-n=int(raw_input())
-ar=[]
-for i in range(0,n):
-    s=raw_input()
-    t=re.search(r"^[a-zA-Z][\w-]*@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}$",s)
-    if t:
-        ar.append(s)
-ar.sort()        
-print ar
+
+def fun(s):
+    return re.search(r"^[\w-]+@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}$", s)
+def filter_mail(emails):
+    return list(filter(fun, emails))
+
+if __name__ == '__main__':
+    n = int(input())
+    emails = []
+    for _ in range(n):
+        emails.append(input())
+
+filtered_emails = filter_mail(emails)
+filtered_emails.sort()
+print(filtered_emails)
