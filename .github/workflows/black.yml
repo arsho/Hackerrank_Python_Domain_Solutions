@@ -28,4 +28,12 @@ jobs:
     - name: Format all py files using black
       run: |
         black $(git ls-files '*.py') 
-        git status -s
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff-index --quiet HEAD || git commit -m "Format Python code with Black"
+    - name: Push changes
+      run: |
+        git push origin master
