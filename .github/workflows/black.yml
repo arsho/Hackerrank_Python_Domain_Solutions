@@ -32,9 +32,9 @@ jobs:
       run: |
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git config --local user.name "${{ github.actor }}"
-        git stash -u
+        git diff-index --quiet HEAD || git stash -u
         black $(git ls-files '*.py')
-        git stash pop
+        git stash drop
         git add .
         message="$(git log -1 --pretty=%B) Format Python code with Black"
         git diff-index --quiet HEAD || git commit -m "$message"
