@@ -34,9 +34,11 @@ jobs:
         git config --local user.name "${{ github.actor }}"
         if [ "$(git ls-files --modified '*.py' | wc -l)" -ne 0 ]; then
           git stash -u
-          git stash drop
           git add --all
           message="$(git log -1 --pretty=%B) Format Python code with Black"
           git commit -m "$message"
           git push origin master
-        fi        
+        fi
+        if [ "$(git ls-files --staged '*.py' | wc -l)" -ne 0 ]; then
+          git stash drop
+        fi      
