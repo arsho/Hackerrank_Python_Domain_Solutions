@@ -11,6 +11,7 @@ Problem   : https://www.hackerrank.com/challenges/xml-1-find-the-score/problem
 import sys
 import xml.etree.ElementTree as etree
 
+
 def get_attr_number(node):
     total = len(node.attrib.keys())
     for child in node:
@@ -20,7 +21,8 @@ def get_attr_number(node):
             total += len(child.attrib.keys())
     return total
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     sys.stdin.readline()
     xml = sys.stdin.read()
     tree = etree.ElementTree(etree.fromstring(xml))

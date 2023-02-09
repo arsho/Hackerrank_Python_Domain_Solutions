@@ -13,10 +13,13 @@ import re
 
 def fun(s):
     return re.search(r"^[\w-]+@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}$", s)
+
+
 def filter_mail(emails):
     return list(filter(fun, emails))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     n = int(input())
     emails = []
     for _ in range(n):
