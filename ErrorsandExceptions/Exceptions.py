@@ -13,4 +13,4 @@ for _ in range(n):
     try:
         print(int(a) // int(b))
     except Exception as e:
-        print(f"Error Code: {str(e)}")
+        print(f"Error Code: {e}")
