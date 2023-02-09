@@ -4,6 +4,7 @@ Subdomain : Math
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 08 February 2023
 Problem   : https://www.hackerrank.com/challenges/find-angle/problem
 """
 
@@ -22,5 +23,4 @@ a = bc
 # where b=c
 angel_b_radian = math.acos(a / (2 * b))
 angel_b_degree = int(round((180 * angel_b_radian) / math.pi))
-output_str = f"{angel_b_degree}°"
-print(output_str)
+print(f"{angel_b_degree}°")
