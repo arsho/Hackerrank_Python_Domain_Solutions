@@ -4,26 +4,25 @@ Subdomain : XML
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 08 February 2023
 Problem   : https://www.hackerrank.com/challenges/xml2-find-the-maximum-depth/problem
 """
 
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-xml_str = ""
-n = int(input())
-for _ in range(n):
-    tmp_str = input()
-    xml_str = xml_str + tmp_str
-
 import xml.etree.ElementTree as etree
 
-tree = etree.ElementTree(etree.fromstring(xml_str))
-root = tree.getroot()
-ar = []
+maxdepth = 0
+def depth(elem, level):
+    global maxdepth
+    level = level + 1
+    maxdepth = max(maxdepth, level)
+    for child in elem:
+        depth(child, level)
 
-
-def cnt_node(node):
-    return max([0] + [cnt_node(child) + 1 for child in node])
-
-
-cnt = cnt_node(root)
-print(cnt)
+if __name__ == '__main__':
+    n = int(input())
+    xml = ""
+    for i in range(n):
+        xml =  xml + input() + "\n"
+    tree = etree.ElementTree(etree.fromstring(xml))
+    depth(tree.getroot(), -1)
+    print(maxdepth)
