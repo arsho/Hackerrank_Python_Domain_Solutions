@@ -4,14 +4,18 @@ Subdomain : Collections
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+Updated   : 09 February 2023
 Problem   : https://www.hackerrank.com/challenges/py-collections-namedtuple/problem
 """
 
-n = int(input())
-col_list = list(input().split())
-marks_col = col_list.index("MARKS")
-marks_list = []
-for _ in range(n):
-    info_list = list(input().split())
-    marks_list.append(float(info_list[marks_col]))
-print(sum(marks_list) / n)
+from collections import namedtuple
+n=int(input())
+columns = ",".join(input().split())
+Student = namedtuple("Student", columns)
+data = []
+for i in range(n):
+    row = input().split()
+    s = Student._make(row)
+    data.append(s)
+avg = sum(float(s.MARKS) for s in data) / n
+print(f"{avg:.2f}")
