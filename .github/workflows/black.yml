@@ -28,17 +28,15 @@ jobs:
     - name: Format all py files using black
       run: |
         black $(git ls-files '*.py') 
-    - name: Commit changes
+    - name: Commit and push changes
       run: |
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git config --local user.name "${{ github.actor }}"
         if [ "$(git ls-files --modified '*.py' | wc -l)" -ne 0 ]; then
           git stash -u
           git stash drop
-          git add .
+          git add --all
           message="$(git log -1 --pretty=%B) Format Python code with Black"
           git commit -m "$message"
-        fi
-    - name: Push changes
-      run: |
-        git push origin master
+          git push origin master
+        fi        
