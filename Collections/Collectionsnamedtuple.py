@@ -9,7 +9,8 @@ Problem   : https://www.hackerrank.com/challenges/py-collections-namedtuple/prob
 """
 
 from collections import namedtuple
-n=int(input())
+
+n = int(input())
 columns = ",".join(input().split())
 Student = namedtuple("Student", columns)
 data = []
