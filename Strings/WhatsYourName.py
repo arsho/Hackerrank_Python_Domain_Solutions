@@ -9,8 +9,7 @@ Problem   : https://www.hackerrank.com/challenges/whats-your-name/problem
 
 
 def print_full_name(a, b):
-    print(f"Hello {a} {b}! You just delved into python.")
-
+    print("Hello", first_name, last_name + "!", "You just delved into python.")
 
 if __name__ == "__main__":
     first_name = input()
