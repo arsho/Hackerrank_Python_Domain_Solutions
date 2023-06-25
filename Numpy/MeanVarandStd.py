@@ -4,6 +4,7 @@ Subdomain : Numpy
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
+UUpdated  : 24 June 2023
 Problem   : https://www.hackerrank.com/challenges/np-mean-var-and-std/problem
 """
 
@@ -17,4 +18,4 @@ for _ in range(n):
 np_ar = numpy.array(ar)
 print(numpy.mean(np_ar, axis=1))
 print(numpy.var(np_ar, axis=0))
-print(numpy.std(np_ar, axis=None))
+print(round(numpy.std(np_ar, axis=None), 11))
