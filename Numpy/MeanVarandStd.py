@@ -4,7 +4,7 @@ Subdomain : Numpy
 Domain    : Python
 Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
-UUpdated  : 24 June 2023
+Updated   : 24 June 2023
 Problem   : https://www.hackerrank.com/challenges/np-mean-var-and-std/problem
 """
 
