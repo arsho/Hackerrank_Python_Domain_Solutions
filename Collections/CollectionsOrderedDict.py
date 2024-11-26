@@ -2,24 +2,29 @@
 Title     : Collections.OrderedDict()
 Subdomain : Collections
 Domain    : Python
-Author    : Ahmedur Rahman Shovon
+Author    : Md Samshad Rahman
 Created   : 15 July 2016
-Updated   : 08 February 2023
+Updated   : 26 November 2024
 Problem   : https://www.hackerrank.com/challenges/py-collections-ordereddict/problem
 """
 
-import collections
-import re
+from collections import OrderedDict
 
-n = int(input())
-item_od = collections.OrderedDict()
-for _ in range(n):
-    record_list = re.split(r"(\d+)$", input().strip())
-    item_name = record_list[0]
-    item_price = int(record_list[1])
-    if item_name not in item_od:
-        item_od[item_name] = item_price
-    else:
-        item_od[item_name] = item_od[item_name] + item_price
-for i in item_od:
-    print(f"{i}{item_od[i]}")
+
+if __name__ == '__main__':
+    ordered_dictionary = OrderedDict()
+
+    n = int(input())
+
+    for _ in range(n):
+        s = list(input().split())
+        price = int(s[len(s) - 1])
+        name = ' '.join(s[:len(s) - 1])
+
+        if ordered_dictionary.get(name):
+            ordered_dictionary[name] += price
+        else:
+            ordered_dictionary[name] = price
+
+    for key, value in ordered_dictionary.items():
+        print(key, value)
