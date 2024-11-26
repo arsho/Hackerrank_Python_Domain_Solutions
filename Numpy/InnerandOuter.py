@@ -2,13 +2,17 @@
 Title     : Inner and Outer
 Subdomain : Numpy
 Domain    : Python
-Author    : Ahmedur Rahman Shovon
+Author    : Md Samshad Rahman
 Created   : 15 July 2016
+Updated   : 25 November 2024
 Problem   : https://www.hackerrank.com/challenges/np-inner-and-outer/problem
 """
-import numpy
+import numpy as np
 
-np_ar1 = numpy.array(list(map(int, input().split())))
-np_ar2 = numpy.array(list(map(int, input().split())))
-print(numpy.inner(np_ar1, np_ar2))
-print(numpy.outer(np_ar1, np_ar2))
+
+if __name__ == '__main__':
+    arr1 = np.array(list(map(int, input().split())))
+    arr2 = np.array(list(map(int, input().split())))
+
+    print(np.inner(arr1, arr2))
+    print(np.outer(arr1, arr2))

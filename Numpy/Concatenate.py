@@ -2,24 +2,26 @@
 Title     : Concatenate
 Subdomain : Numpy
 Domain    : Python
-Author    : Ahmedur Rahman Shovon
+Author    : Md Samshad Rahman
 Created   : 15 July 2016
+Updated   : 25 November 2024
 Problem   : https://www.hackerrank.com/challenges/np-concatenate/problem
 """
 
+import numpy as np
 
-import numpy
 
-n, m, p = map(int, input().split())
+if __name__ == '__main__':
+    n, m, p = map(int, input().split())
 
-ar1 = []
-ar2 = []
-for _ in range(n):
-    tmp = list(map(int, input().split()))
-    ar1.append(tmp)
-for _ in range(m):
-    tmp = list(map(int, input().split()))
-    ar2.append(tmp)
-np_ar1 = numpy.array(ar1)
-np_ar2 = numpy.array(ar2)
-print(numpy.concatenate((np_ar1, np_ar2), axis=0))
+    arr1 = []
+    arr2 = []
+    for _ in range(n):
+        tmp = list(map(int, input().split()))
+        arr1.append(tmp)
+    for _ in range(m):
+        tmp = list(map(int, input().split()))
+        arr2.append(tmp)
+    np_arr1 = np.array(arr1)
+    np_arr2 = np.array(arr2)
+    print(np.concatenate((np_arr1, np_arr2), axis=0))
