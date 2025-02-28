@@ -15,6 +15,7 @@ domain = "Python"
 author = "Ahmedur Rahman Shovon"
 created_date = datetime.datetime.today().strftime("%d %B %Y")
 info_file_name = "python_info.txt"
+unix = False
 
 
 def valid_name(given_name):
@@ -56,7 +57,7 @@ for line in info_file_lines:
         for title in title_ar:
             file_header_str = write_file_header(title[1:-1], subdomain_name)
             title_valid = valid_name(title)
-            f = open(folder_name + "\\" + title_valid + extension, "w")
+            f = open(folder_name + ("/" if unix else "\\") + title_valid + extension, "w")
             f.write(file_header_str)
             f.close()
 
