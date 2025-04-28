@@ -2,20 +2,18 @@
 Title     : Mean, Var, and Std
 Subdomain : Numpy
 Domain    : Python
-Author    : Ahmedur Rahman Shovon
+Author    : Md Samshad Rahman
 Created   : 15 July 2016
-Updated   : 24 June 2023
+Updated   : 25 November 2024
 Problem   : https://www.hackerrank.com/challenges/np-mean-var-and-std/problem
 """
+import numpy as np
 
-import numpy
 
-n, m = map(int, input().split())
-ar = []
-for _ in range(n):
-    tmp = list(map(int, input().split()))
-    ar.append(tmp)
-np_ar = numpy.array(ar)
-print(numpy.mean(np_ar, axis=1))
-print(numpy.var(np_ar, axis=0))
-print(round(numpy.std(np_ar, axis=None), 11))
+if __name__ == '__main__':
+    n, m = map(int, input().split())
+    arr = np.array([input().split() for _ in range(n)], int)
+
+    print(np.mean(arr, axis=1))
+    print(np.var(arr, axis=0))
+    print(round(np.std(arr, axis=None), 11))

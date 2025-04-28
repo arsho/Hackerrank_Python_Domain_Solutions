@@ -2,22 +2,17 @@
 Title     : Dot and Cross
 Subdomain : Numpy
 Domain    : Python
-Author    : Ahmedur Rahman Shovon
+Author    : Md Samshad Rahman
 Created   : 15 July 2016
+Updated   : 25 November 2024
 Problem   : https://www.hackerrank.com/challenges/np-dot-and-cross/problem
 """
+import numpy as np
 
-import numpy
+if __name__ == '__main__':
+    n = int(input())
 
-n = int(input())
-ar1 = []
-ar2 = []
-for _ in range(n):
-    tmp = list(map(int, input().split()))
-    ar1.append(tmp)
-np_ar1 = numpy.array(ar1)
-for _ in range(n):
-    tmp = list(map(int, input().split()))
-    ar2.append(tmp)
-np_ar2 = numpy.array(ar2)
-print(numpy.dot(np_ar1, np_ar2))
+    arr1 = np.array([input().split() for _ in range(n)], int)
+    arr2 = np.array([input().split() for _ in range(n)], int)
+
+    print(np.dot(arr1, arr2))

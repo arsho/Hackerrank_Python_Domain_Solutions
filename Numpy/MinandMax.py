@@ -2,17 +2,16 @@
 Title     : Min and Max
 Subdomain : Numpy
 Domain    : Python
-Author    : Ahmedur Rahman Shovon
+Author    : Md Samshad Rahman
 Created   : 15 July 2016
+Updated   : 25 November 2024
 Problem   : https://www.hackerrank.com/challenges/np-min-and-max/problem
 """
+import numpy as np
 
-import numpy
 
-n, m = map(int, input().split())
-ar = []
-for _ in range(n):
-    tmp = list(map(int, input().split()))
-    ar.append(tmp)
-np_ar = numpy.array(ar)
-print(numpy.max(numpy.min(np_ar, axis=1)))
+if __name__ == '__main__':
+    n, m = map(int, input().split())
+    arr = np.array([input().split() for _ in range(n)], int)
+    result = np.max(np.min(arr, axis=1))
+    print(result)
