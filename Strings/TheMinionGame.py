@@ -6,6 +6,7 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/the-minion-game/problem
 """
+
 s = input().strip()
 s_length = len(s)
 vowel_list = ["A", "E", "I", "O", "U"]

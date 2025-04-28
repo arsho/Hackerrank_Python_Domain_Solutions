@@ -8,6 +8,7 @@ Updated   : 25 November 2024
 Problem   : https://www.hackerrank.com/challenges/np-zeros-and-ones/problem
 """
 
+
 import numpy as np
 
 

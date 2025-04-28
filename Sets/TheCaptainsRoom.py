@@ -6,6 +6,7 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/py-the-captains-room/problem
 """
+
 k = int(input())
 room_number_list = list(map(int, input().split()))
 room_number_set = set(room_number_list)

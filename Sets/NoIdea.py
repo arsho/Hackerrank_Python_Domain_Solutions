@@ -7,6 +7,7 @@ Created   : 15 July 2016
 Updated   : 19 June 2022
 Problem   : https://www.hackerrank.com/challenges/no-idea/problem
 """
+
 from collections import Counter
 
 n, m = map(int, input().split())

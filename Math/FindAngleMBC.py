@@ -8,7 +8,6 @@ Updated   : 08 February 2023
 Problem   : https://www.hackerrank.com/challenges/find-angle/problem
 """
 
-
 import math
 
 ab = float(input())

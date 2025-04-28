@@ -9,9 +9,9 @@ Problem   : https://www.hackerrank.com/challenges/np-array-mathematics/problem
 """
 import numpy as np
 
-
 if __name__ == '__main__':
     n, m = map(int, input().split())
+
 
     ar1 = np.array([input().split() for _ in range(n)], int)
     ar2 = np.array([input().split() for _ in range(n)], int)

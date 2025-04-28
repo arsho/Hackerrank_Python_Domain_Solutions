@@ -6,6 +6,7 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/designer-door-mat/problem
 """
+
 N, M = map(int, input().split())
 for i in range(1, N, 2):
     print(int((M - 3 * i) / 2) * "-" + (i * ".|.") + int((M - 3 * i) / 2) * "-")

@@ -6,6 +6,7 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/matrix-script/problem
 """
+
 import re
 
 n, m = map(int, input().split())

@@ -7,6 +7,7 @@ Created   : 15 July 2016
 Updated   : 25 November 2024
 Problem   : https://www.hackerrank.com/challenges/np-eye-and-identity/problem
 """
+
 import numpy as np
 
 
