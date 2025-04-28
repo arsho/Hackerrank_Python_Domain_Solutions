@@ -7,10 +7,11 @@ Created   : 15 July 2016
 Updated   : 26 November 2024
 Problem   : https://www.hackerrank.com/challenges/collections-counter/problem
 """
+
 import collections
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     total_shoes = int(input())
     shoe_sizes = list(map(int, input().split()))
     inventory = collections.Counter(shoe_sizes)
@@ -25,5 +26,3 @@ if __name__ == '__main__':
             inventory[size] -= 1
 
     print(total_revenue)
-
-

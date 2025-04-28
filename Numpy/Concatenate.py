@@ -11,7 +11,7 @@ Problem   : https://www.hackerrank.com/challenges/np-concatenate/problem
 import numpy as np
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n, m, p = map(int, input().split())
 
     arr1 = []

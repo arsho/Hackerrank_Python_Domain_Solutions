@@ -11,7 +11,7 @@ Problem   : https://www.hackerrank.com/challenges/floor-ceil-and-rint/problem
 import numpy as np
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     np.set_printoptions(legacy="1.13")
     arr = np.array(input().split(), float)
     print(np.floor(arr))

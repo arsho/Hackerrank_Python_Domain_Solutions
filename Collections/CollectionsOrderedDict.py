@@ -11,7 +11,7 @@ Problem   : https://www.hackerrank.com/challenges/py-collections-ordereddict/pro
 from collections import OrderedDict
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ordered_dictionary = OrderedDict()
 
     n = int(input())
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     for _ in range(n):
         s = list(input().split())
         price = int(s[len(s) - 1])
-        name = ' '.join(s[:len(s) - 1])
+        name = " ".join(s[: len(s) - 1])
 
         if ordered_dictionary.get(name):
             ordered_dictionary[name] += price

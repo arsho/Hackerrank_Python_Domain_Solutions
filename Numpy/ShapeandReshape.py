@@ -11,7 +11,7 @@ Problem   : https://www.hackerrank.com/challenges/np-shape-reshape/problem
 import numpy as np
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     array = list(map(int, input().split()))
     np_arr = np.array(array)
     print(np.reshape(np_arr, (3, 3)))
