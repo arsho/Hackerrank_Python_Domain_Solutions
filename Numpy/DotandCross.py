@@ -7,7 +7,6 @@ Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/np-dot-and-cross/problem
 """
 
-
 import numpy
 
 n = int(input())

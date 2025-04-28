@@ -7,7 +7,6 @@ Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/np-concatenate/problem
 """
 
-
 import numpy
 
 n, m, p = map(int, input().split())

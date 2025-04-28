@@ -7,6 +7,7 @@ Created   : 15 July 2016
 Updated   : 08 February 2023
 Problem   : https://www.hackerrank.com/challenges/map-and-lambda-expression/problem
 """
+
 cube = lambda x: x * x * x
 
 

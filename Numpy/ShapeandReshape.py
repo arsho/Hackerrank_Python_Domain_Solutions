@@ -6,6 +6,7 @@ Author    : Ahmedur Rahman Shovon
 Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/np-shape-reshape/problem
 """
+
 import numpy
 
 ar = list(map(int, input().split()))

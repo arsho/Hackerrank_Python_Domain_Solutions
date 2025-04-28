@@ -7,7 +7,6 @@ Created   : 15 July 2016
 Problem   : https://www.hackerrank.com/challenges/maximize-it/problem
 """
 
-
 import itertools
 
 k, m = map(int, input().split())
